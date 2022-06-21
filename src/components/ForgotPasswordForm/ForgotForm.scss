@@ -1,5 +1,5 @@
 @import '../../global.scss';
-.Autorization_wrapper {
+.Forgot_wrapper {
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -7,12 +7,7 @@
         gap: 20px;
     }
     &_inputs {
-        display: flex;
-        flex-direction:column ;
-        gap: 16px;
-        @include desktop {
-            gap: 20px;
-        }
+        
         p {
             font-size: 14px;
             font-weight: 600;
@@ -20,20 +15,7 @@
                 font-size: 18px;
             }
         }
-        .forgot {
-            font-size: 8.5px;
-            font-weight: 300;
-            margin-top: 4px;
-            transition: all 0.3s;
-            cursor: pointer;
-            text-decoration: none;
-            &:hover {
-                color: #4062FF;
-            }
-            @include desktop {
-                font-size: 12px;
-            }
-        }
+    
         .form_input {
             background: white !important;
             margin-top: 3px;

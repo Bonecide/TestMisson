@@ -1,0 +1,22 @@
+@import '../../global.scss';
+
+.SuccessMessage {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    align-items: center;
+    margin: 0 auto;
+    p{
+        font-size: 10px;
+        font-weight: 600;
+        text-align: center;
+        @include desktop {
+            font-size: 18px;
+        }
+    }
+    button {
+        @include desktop {
+            width: 180px;
+        }
+    }
+}

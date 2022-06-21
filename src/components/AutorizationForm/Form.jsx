@@ -4,12 +4,13 @@ import { useForm } from 'react-hook-form';
 import { useEffect } from 'react';
 import { TextField } from '@mui/material';
 import { Link } from 'react-router-dom';
+import SiteButton from '../Button/SiteButton';
 export default function AutorizationForm() {
     const navigate = useNavigate()
     const isAuth = ()=> { 
        const auth = localStorage.getItem('isAuth')
         if(auth) {
-            // navigate('sfsdf')
+            navigate('/main')
         }
     }
     const {
@@ -22,7 +23,7 @@ export default function AutorizationForm() {
       });
       const Autorizarion = () => {
           reset()
-        //   navigate('/dfsdf')
+          navigate('/main')
           localStorage.setItem('isAuth',true)
       }
 
@@ -39,10 +40,10 @@ export default function AutorizationForm() {
             <div>
                 <p>Введите свой пароль:</p>
                 <TextField className="form_input" {...register("password")}name='password' size="small"  type="password" required placeholder='********' />
-                <Link to={'/'} className="forgot">Забыли пароль?</Link>
+                <Link to={'/forgotPassword'} className="forgot">Забыли пароль?</Link>
             </div>
         </div>  
-        <button type="submit">Войти</button>
+        <SiteButton type='submit'>Готов</SiteButton>
     </form>
     )
 }
