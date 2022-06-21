@@ -1,16 +1,16 @@
 
 import './App.scss';
 import { Route, Routes } from 'react-router-dom';
-import Autorization from './Pages/Autorization/Autorization';
-import ForgotPassword from './Pages/ForgotPassword/ForgotPassword';
-import Main from './Pages/Main/Main';
+import AutorizationPage from './Pages/AutorizationPage/AutorizationPage';
+import ForgotPasswordPage from './Pages/ForgotPasswordPage/ForgotPasswordPage';
+import MainPage from './Pages/MainPage/MainPage';
 
 function App() {
   return (
    <Routes>
-      <Route index element={<Autorization/>}/>
-      <Route path='/forgotPassword' element={<ForgotPassword/>}/>
-      <Route path='/main' element={<Main/>}/>
+      <Route index element={<AutorizationPage/>}/>
+      <Route path='/forgotPassword' element={<ForgotPasswordPage/>}/>
+      <Route path='/main' element={<MainPage/>}/>
    </Routes>
   );
 }

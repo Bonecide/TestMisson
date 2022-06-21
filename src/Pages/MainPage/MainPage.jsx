@@ -1,7 +1,7 @@
 import SiteButton from "../../components/Button/SiteButton";
 import Player from "../../components/Player/Player";
 import Video from '../../media/Video.mp4'
-import './Main.scss'
+import './MainPage.scss'
 import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 export default function Main() {

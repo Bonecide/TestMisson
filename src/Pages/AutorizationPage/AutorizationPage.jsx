@@ -1,7 +1,7 @@
 
 import AutorizationForm from "../../components/AutorizationForm/Form";
-import './Autorization.scss'
-export default function Autorization() {
+import './AutorizationPage.scss'
+export default function AutorizationPage() {
      
     return(
         <div className="Autorization">
