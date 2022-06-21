@@ -1,0 +1,68 @@
+@import '../../global.scss';
+.Autorization_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    @include desktop {
+        gap: 20px;
+    }
+    &_inputs {
+        display: flex;
+        flex-direction:column ;
+        gap: 16px;
+        @include desktop {
+            gap: 20px;
+        }
+        p {
+            font-size: 14px;
+            font-weight: 600;
+            @include desktop {
+                font-size: 18px;
+            }
+        }
+        .forgot {
+            font-size: 8.5px;
+            font-weight: 300;
+            margin-top: 4px;
+            transition: all 0.3s;
+            cursor: pointer;
+            text-decoration: none;
+            &:hover {
+                color: #4062FF;
+            }
+            @include desktop {
+                font-size: 12px;
+            }
+        }
+        .form_input {
+            background: white !important;
+            margin-top: 3px;
+            width: 100%;
+            box-shadow: 0px 0px 29.05777931213379px 0px #0000000D;
+            border: none;
+            border-radius: 9.33333px !important;
+            overflow: hidden;
+            div {
+                fieldset {
+                    border: none !important;
+                }
+            }
+        }
+    }
+    button {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        border: none;
+        background: linear-gradient(90deg, #3AA0FF 0%, #137CF9 52.76%, #0152F9 103.37%);
+        padding: 9px;
+        margin-top: 16px;
+        border-radius: 12.4444px;
+        cursor: pointer;
+        @include desktop {
+            font-size: 15px;
+        }
+    }
+}
