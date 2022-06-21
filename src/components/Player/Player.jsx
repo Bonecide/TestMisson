@@ -7,11 +7,12 @@ export default function Player({url = 'https://www.youtube.com/watch?v=Swkqd-cbV
         
          <ReactPlayer url={url} 
             className='react-player'
+         playing={true}
          light={true}
          controls={true}
          playIcon={
          <div className='PlayCircle'>
-            <img src={'img/Play.svg'} alt="fsdfsd" />
+            <img src={'img/Play.svg'} alt="Play" />
          </div>}
          />
            
