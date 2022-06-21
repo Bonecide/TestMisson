@@ -1,20 +1,28 @@
-
+import SiteButton from "../../components/Button/SiteButton";
+import Player from "../../components/Player/Player";
+import Video from '../../media/Video.mp4'
+import './Main.scss'
+import { useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
 export default function Main() {
+    const navigate = useNavigate()
+    const isAuth = ()=> { 
+        const auth = localStorage.getItem('isAuth')
+         if(!auth) {
+             navigate('/')
+         }
+     }
+     useEffect(()=> {
+        isAuth()
+     },[])
+     const handleSubmit = () => {
+        localStorage.removeItem('isAuth')
+        navigate('/')
+     }
     return(
-        <div>
-            <video
-            id="my-player"
-            class="video-js"
-            controls
-            preload="auto"
-            poster="//vjs.zencdn.net/v/oceans.png"
-            data-setup='{}'
-            >
-                 <source src="//vjs.zencdn.net/v/oceans.mp4" type="video/mp4"></source>
-                
-  
-    
-            </video>
+        <div className="MainPage">
+            <SiteButton onClick = {handleSubmit}>Выйти</SiteButton>
+            <Player url={Video}/>
         </div>
     )
 }

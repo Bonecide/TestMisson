@@ -14,13 +14,14 @@ export default function ForgotForm({setSuccess}) {
       const Autorizarion = () => {
           reset()
           setSuccess(true)
+
       }
 
     return(
     <form className='Forgot_wrapper' onSubmit={handleSubmit(Autorizarion)}>
         <div className ='Forgot_wrapper_inputs'>    
             <div>
-                <p>Введите свой email::</p> 
+                <p>Введите свой email:</p> 
                 <TextField className="form_input" {...register("login")} name='email' size="small"  type="email" required placeholder='sanekya_san@mail.ru' />
             </div>
            

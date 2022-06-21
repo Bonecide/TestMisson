@@ -6,7 +6,7 @@ export default function SuccessMessage() {
     return (
         <div className="SuccessMessage">
             <p>Проверьте свою почту на наличие сообщения о востановлении пароля и пройдите все шаги что написаны в письме</p>
-            <SiteButton onClick = {() => navigate('/main')} >Готово</SiteButton>
+            <SiteButton onClick = {() => navigate('/')} >Готово</SiteButton>
         </div>
     )
 }
