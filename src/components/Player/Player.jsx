@@ -1,5 +1,5 @@
 import ReactPlayer from 'react-player/lazy'
-import SiteButton from '../Button/SiteButton'
+import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import './Player.scss'
 export default function Player({url = 'https://www.youtube.com/watch?v=Swkqd-cbVMA&ab_channel=__Vlad__'}) {
     return(
@@ -12,7 +12,7 @@ export default function Player({url = 'https://www.youtube.com/watch?v=Swkqd-cbV
          controls={true}
          playIcon={
          <div className='PlayCircle'>
-            <img src={'img/Play.svg'} alt="Play" />
+            <PlayArrowIcon className='PlayArrow'/>
          </div>}
          />
            
